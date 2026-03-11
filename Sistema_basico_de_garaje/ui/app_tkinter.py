@@ -1,9 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from servicios.garaje_servicio import GarajeServicio
-
 class AppTkinter:
-    def __init__(self, root):
+    def __init__(self, root): #Inicializa la ventana principal, configura el título, tamaño y crea los widgets necesarios para la interfaz.
         self.root = root
         self.root.title("Registro de Vehículos - Garaje")
         self.root.geometry("600x400")
@@ -11,7 +10,6 @@ class AppTkinter:
 
         # Instancia del servicio
         self.servicio = GarajeServicio()
-
         # Variables para los campos de entrada
         self.placa_var = tk.StringVar()
         self.marca_var = tk.StringVar()
